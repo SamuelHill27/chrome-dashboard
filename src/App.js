@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from "./App.module.css";
+import TimeDate from "./components/TimeDate";
+import Weather from "./components/Weather";
+import Tasks from "./components/Tasks";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* empty divs for styling purposes only */}
+      <div className={`${styles.bgImage} ${styles.bgFixedPos}`}></div>
+      <div className={`${styles.bgVignette} ${styles.bgFixedPos}`}></div>
+
+      <div className={`${styles.container} ${styles.bgFixedPos}`}>
+        <main className={styles.app}>
+          <div className={styles.info}>
+            <TimeDate />
+            <Weather />
+          </div>
+          <Tasks />
+        </main>
+      </div>
+    </>
   );
 }
 

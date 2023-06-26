@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.time {
+    flex: 2;
+    border: solid;
+}
+
+.date {
+    flex: 1;
+    border: solid;
+}
