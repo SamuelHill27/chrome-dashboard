@@ -1,16 +1,15 @@
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    width: 50%;
 }
 
 .time {
-    flex: 2;
-    border: solid;
+    font-size: 5rem;
 }
 
 .date {
-    flex: 1;
-    border: solid;
+    font-size: 2rem;
 }
