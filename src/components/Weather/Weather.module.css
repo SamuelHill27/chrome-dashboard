@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container__temp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container__temp__real {
+    display: flex;
+}
+
+.temp__real {
+    font-size: 5rem;
+}
+
+.temp__real__units {
+    font-size: 2rem;
+    margin-top: 15%;
+}
+
+.temp__feels {
+    font-size: 2rem;
+}
+
+.container__stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.iconCrop {
+    width: 9.5rem;
+    height: auto;
+    margin: 0;
+}
+
+.iconCrop img {
+    width: 9rem;
+    object-fit: none;
+}

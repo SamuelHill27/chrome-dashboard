@@ -1,6 +1,6 @@
 import styles from "./App.module.css";
 import TimeDate from "./components/TimeDate";
-import Weather from "./components/Weather";
+import Weather from "./components/Weather/Weather";
 import Tasks from "./components/Tasks";
 
 function App() {

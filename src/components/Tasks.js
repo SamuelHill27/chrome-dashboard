@@ -1,14 +1,14 @@
 import styles from "./Tasks.module.css";
 
 const Tasks = () => {
+  const submitHandler = (event) => {
+    event.preventDefault();
+  }
+
   return (
-    <section className={styles.container}>
-      <h1>Task 1</h1>
-      <h1>Task 2</h1>
-      <h1>Task 3</h1>
-      <h1>Task 4</h1>
-      <h1>Task 5</h1>
-    </section>
+    <form className={styles.container} onSubmit={submitHandler}>
+      <button>+</button>
+    </form>
   );
 };
 
